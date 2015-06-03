@@ -1,7 +1,7 @@
 // Pass the global object by reference
 (function (global) {
-    require = function (module) {
-        return exports[module];
+    require = function (mod) {
+        return module.exports[mod];
     }
 
     // Initialize an empty module object to be referenced
